@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="innerContainer d-flex">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://cdn.pixabay.com/photo/2015/07/09/23/09/cadaques-838724_1280.jpg" class="img-fluid" />
+      </div>
+      <div class="col-md-6 px-5">
+        <form class="mt-5">
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter your email" autocomplete="off">
+            <div id="emailHelp" class="form-text">here error messages will be shown</div>
+          </div>
+          <div class="input-group">
+            <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="basic-addon2"
+              placeholder="Recipient's username" autocomplete="off">
+            <span class="input-group-text" id="basic-addon2">
+              <i class="fas fa-eye" onclick="displayPass();toggleicon(this);"></i>
+            </span>
+          </div>
+          <div id="basic-addon2" class="mb-3 form-text">here error messages will be shown</div>
+          <div class=" mb-3 form-check form-switch float-start">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Keep me logged in</label>
+          </div>
+          <div class="float-end">
+            <p>Forgot Password ?</p>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mb-3">Submit</button>
+        </form>
+        <button type="submit" class="btn btn-outline-success w-100 mb-2" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function displayPass() {
+    var x = document.getElementById('pswd');
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+  function toggleicon(y) {
+    y.classList.toggle("fa-eye-slash");
+  }
+</script>

@@ -1,0 +1,17 @@
+.footerbg{
+    background: #000333;
+}
+.disp{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+padding-right: 30px;
+}
+.hov:hover{
+    cursor:pointer;
+}
+.disp > .hov:hover{
+    cursor: pointer;
+}

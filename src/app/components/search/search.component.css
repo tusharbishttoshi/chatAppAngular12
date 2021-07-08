@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbg {
+    background: #000333;
+}
+
+.footerbg {
+    background: #000333;
+}
+
+.disp {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hov:hover {
+    cursor: pointer;
+}
+
+.disp>.hov:hover {
+    cursor: pointer;
+}
+
+.brdr {
+    border: 1px solid lightgrey;
+}
+
+.main {
+    height: 517px;
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

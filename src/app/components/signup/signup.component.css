@@ -1,0 +1,40 @@
+.container-fluid {
+    max-width: 100%;
+    background: #000333;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.innerContainer {
+    max-width: 82.7%;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 20px 0px 20px 0px;
+    height: auto;
+}
+
+.error-msg {
+    line-height: 200%;
+    background: #f36767;
+    max-width: 70%;
+    padding-left: 10px;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        height: auto;
+    }
+    .error-msg {
+        max-width: 100%;
+    }
+    .paddBtn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

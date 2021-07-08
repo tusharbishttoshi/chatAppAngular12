@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbg{
+    background: #000333;
+}
+.hov:hover{
+    cursor:pointer;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+.logo{
+    font-weight: 600;
+}
+.right{
+    text-align: end;
+    padding-right: 30px;
+}
+.left{
+    padding-left: 30px;
+}
