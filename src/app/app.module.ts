@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,7 +37,9 @@ import { StaticPagesComponent } from './components/static-pages/static-pages.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormGroup,
+    FormControl,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
